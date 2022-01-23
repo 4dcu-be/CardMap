@@ -23,7 +23,7 @@ def decode_city(city: str) -> str:
 
     :return: corrected name
     """
-    return unidecode(unquote(city.replace('=', '%')))
+    return unidecode(unquote(city.replace("=", "%")))
 
 
 def extract_cards(body):
@@ -36,11 +36,11 @@ def extract_cards(body):
     record = False
     card_lines = []
 
-    for line in str(body).split('\n'):
+    for line in str(body).split("\n"):
         if record and line.startswith("Shipping"):
             break
 
-        if record and line.strip() != '':
+        if record and line.strip() != "":
             card_lines.append(line)
 
         if line.startswith("+++++++"):
@@ -62,10 +62,10 @@ def parse_cards(body) -> (int, float):
     card_value = 0
 
     for c in card_data:
-        current_count = int(c.split('x')[0])
-        current_value = float(c.split()[-2].replace(',', '.')) * current_count
+        current_count = int(c.split("x")[0])
+        current_value = float(c.split()[-2].replace(",", ".")) * current_count
 
-        if '[Playset]' in c:
+        if "[Playset]" in c:
             current_count *= 4
 
         card_count += current_count
@@ -82,9 +82,11 @@ def parse_shipping(body) -> float:
     :return: shipping costs (float)
     """
     shipping_cost = 0
-    for line in str(body).split('\n'):
-        if line.startswith('Shipping'):
-            shipping_cost = float(line.replace('Shipping', '').strip().split()[0].replace(',', '.'))
+    for line in str(body).split("\n"):
+        if line.startswith("Shipping"):
+            shipping_cost = float(
+                line.replace("Shipping", "").strip().split()[0].replace(",", ".")
+            )
 
     return shipping_cost
 
@@ -99,18 +101,18 @@ def parse_address(body) -> (str, str, str):
     record = False
     address_lines = []
 
-    for line in str(body).split('\n'):
+    for line in str(body).split("\n"):
         if line.startswith("Tracking:"):
             break
 
-        if record and line.strip() != '':
+        if record and line.strip() != "":
             address_lines.append(line)
 
         if line.startswith("Status: Paid"):
             record = True
 
     zip_code = address_lines[-2].split()[0]
-    city = ' '.join(address_lines[-2].split()[1:])
+    city = " ".join(address_lines[-2].split()[1:])
     country = address_lines[-1]
 
     return zip_code, city, country
@@ -130,30 +132,30 @@ def parse_eml(file: str) -> dict:
     with open(file) as fin:
         data = message_from_file(fin)
 
-        body = str(data.get_payload(0)).replace('=\n', '')
+        body = str(data.get_payload(0)).replace("=\n", "")
 
-        output['shipment_id'] = parse_subject(data['subject'])
-        output['order_date'] = data['date']
+        output["shipment_id"] = parse_subject(data["subject"])
+        output["order_date"] = data["date"]
 
         zip_code, city, country = parse_address(body)
 
-        output['zip'] = zip_code
-        output['city'] = decode_city(city)
-        output['country'] = country
+        output["zip"] = zip_code
+        output["city"] = decode_city(city)
+        output["country"] = country
 
         card_count, card_value = parse_cards(body)
 
-        output['card_count'] = card_count
-        output['card_value'] = card_value
+        output["card_count"] = card_count
+        output["card_value"] = card_value
 
-        output['shipping'] = parse_shipping(body)
+        output["shipping"] = parse_shipping(body)
 
     return output
 
 
 def read_folder(path: str):
     output = []
-    files = Path(path).glob('Shipment*.eml')
+    files = Path(path).glob("Shipment*.eml")
     for file in files:
         output.append(parse_eml(file))
 
@@ -164,7 +166,7 @@ def add_new_shipments(df: pd.DataFrame, folder_path):
     shipment_data = read_folder(folder_path)
 
     for sd in shipment_data:
-        if not sd['shipment_id'] in list(df['shipment_id'].astype(str)):
+        if not sd["shipment_id"] in list(df["shipment_id"].astype(str)):
             df = df.append(sd, ignore_index=True)
 
     return df

@@ -28,10 +28,10 @@ def add_coordinates(df: pd.DataFrame, api_key: str):
     gmaps = googlemaps.Client(key=api_key)
 
     for ix, row in new_df.iterrows():
-        if np.isnan(row['lat']):
+        if np.isnan(row["lat"]):
             geocode_result = gmaps.geocode(prepare_address(row))
-            location = geocode_result[0]['geometry']['location']
-            new_df.at[ix, 'lat'] = location['lat']
-            new_df.at[ix, 'lng'] = location['lng']
+            location = geocode_result[0]["geometry"]["location"]
+            new_df.at[ix, "lat"] = location["lat"]
+            new_df.at[ix, "lng"] = location["lng"]
 
     return new_df
