@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     by_location = (
         processed_data.groupby(["lng", "lat"])
-            .agg(
+        .agg(
             card_value=pd.NamedAgg("card_value", sum),
             card_count=pd.NamedAgg("card_count", sum),
             shipping=pd.NamedAgg("shipping", sum),
@@ -19,20 +19,20 @@ if __name__ == "__main__":
             city=pd.NamedAgg("city", "first"),
             country=pd.NamedAgg("country", "first"),
         )
-            .reset_index()
+        .reset_index()
     )
 
     by_location.to_csv(path.join(output_dir, "orders_by_location.csv"), index=None)
 
     by_country = (
         processed_data.groupby(["country"])
-            .agg(
+        .agg(
             card_value=pd.NamedAgg("card_value", sum),
             card_count=pd.NamedAgg("card_count", sum),
             shipping=pd.NamedAgg("shipping", sum),
             order_count=pd.NamedAgg("shipping", "count"),
         )
-            .reset_index()
+        .reset_index()
     )
 
     by_country.to_csv(path.join(output_dir, "orders_by_country.csv"), index=None)
