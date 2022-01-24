@@ -1,5 +1,3 @@
-import sys
-
 import pandas as pd
 import os
 
@@ -35,8 +33,8 @@ def load_data(file: str) -> pd.DataFrame:
 
 
 @click.command()
-@click.argument('orders') # , help="Path to CSV file with orders (a new file will be created if this doesn't exist)"
-@click.argument('eml_data') # , help="Path to directory with EML files with shipping requests"
+@click.argument('orders')
+@click.argument('eml_data')
 @click.option('--api_key', default=None, help='Google Geocoding API key')
 def run(orders, eml_data, api_key=None):
     """
