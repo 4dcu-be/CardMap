@@ -6,8 +6,8 @@ import click
 
 
 @click.command()
-@click.argument('orders')
-@click.argument('output_dir')
+@click.argument("orders")
+@click.argument("output_dir")
 def run(orders, output_dir):
     """
     Will read a CSV file with parsed ORDERS and generate some summary statistics by location, country and total. The
@@ -37,5 +37,3 @@ def run(orders, output_dir):
 
 if __name__ == "__main__":
     run()
-
-

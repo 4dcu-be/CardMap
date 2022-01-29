@@ -33,9 +33,9 @@ def load_data(file: str) -> pd.DataFrame:
 
 
 @click.command()
-@click.argument('orders')
-@click.argument('eml_data')
-@click.option('--api_key', default=None, help='Google Geocoding API key')
+@click.argument("orders")
+@click.argument("eml_data")
+@click.option("--api_key", default=None, help="Google Geocoding API key")
 def run(orders, eml_data, api_key=None):
     """
     Will load previously parsed from ORDERS (or create a new file if these don't exist), and parse all eml files in
@@ -47,9 +47,7 @@ def run(orders, eml_data, api_key=None):
     """
     # Get API key from Google's Geocoding API from environment vars
     if api_key is None:
-        api_key = os.environ[
-            "API_KEY"
-        ]
+        api_key = os.environ["API_KEY"]
 
     # # Get command line args
     # orders = sys.argv[1]
