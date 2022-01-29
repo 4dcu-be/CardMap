@@ -1,7 +1,7 @@
 import pandas as pd
 from os import path
 
-from operations import groupby_country, summarize, groupby_location
+from operations import groupby_country, summarize, groupby_location, start_pipeline, cluster_locations
 import click
 
 
@@ -25,10 +25,14 @@ def run(orders, output_dir):
     by_country = processed_data.pipe(groupby_country)
     totals = processed_data.pipe(summarize)
 
+    # Geo-clustering (group nearby locations together for map)
+    location_clusters = by_location.pipe(start_pipeline).pipe(cluster_locations)
+
     # Write output
     by_location.to_csv(path.join(output_dir, "orders_by_location.csv"), index=None)
     by_country.to_csv(path.join(output_dir, "orders_by_country.csv"), index=None)
     totals.to_csv(path.join(output_dir, "orders_summary.csv"))
+    location_clusters.to_csv(path.join(output_dir, "orders_by_location_cluster.csv"), index=None)
 
 
 if __name__ == "__main__":

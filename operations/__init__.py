@@ -3,6 +3,7 @@ import pandas as pd
 from .shipments import add_new_shipments
 from .geocoding import add_coordinates
 from .grouping import groupby_country, summarize, groupby_location
+from .geoclustering import cluster_locations
 
 
 def start_pipeline(df: pd.DataFrame):
