@@ -22,20 +22,22 @@ def cluster_locations(df: pd.DataFrame, height=100) -> pd.DataFrame:
     distance_matrix = haversine_distances(locations_radians) * 6371
     compressed_distance = ssd.squareform(distance_matrix)
 
-    df["cluster"] = shc.cut_tree(
-        shc.ward(compressed_distance), height=height
-    ).flatten()
+    df["cluster"] = shc.cut_tree(shc.ward(compressed_distance), height=height).flatten()
 
-    output = df.groupby(["cluster", "country"]).agg(
-        lng=pd.NamedAgg('lng', 'mean'),
-        lat=pd.NamedAgg('lat', 'mean'),
-        city=pd.NamedAgg('city', lambda x: ', '.join(x)),
-        card_value=pd.NamedAgg('card_value', 'sum'),
-        card_count=pd.NamedAgg('card_count', 'sum'),
-        shipping=pd.NamedAgg('shipping', 'sum'),
-        order_count=pd.NamedAgg('order_count', 'sum'),
-        country=pd.NamedAgg('country', 'first'),
-        locations=pd.NamedAgg('city', 'size')
-    ).sort_values('locations', ascending=False)
+    output = (
+        df.groupby(["cluster", "country"])
+        .agg(
+            lng=pd.NamedAgg("lng", "mean"),
+            lat=pd.NamedAgg("lat", "mean"),
+            city=pd.NamedAgg("city", lambda x: ", ".join(x)),
+            card_value=pd.NamedAgg("card_value", "sum"),
+            card_count=pd.NamedAgg("card_count", "sum"),
+            shipping=pd.NamedAgg("shipping", "sum"),
+            order_count=pd.NamedAgg("order_count", "sum"),
+            country=pd.NamedAgg("country", "first"),
+            locations=pd.NamedAgg("city", "size"),
+        )
+        .sort_values("locations", ascending=False)
+    )
 
     return output
