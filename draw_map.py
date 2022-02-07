@@ -16,7 +16,10 @@ projection_params = {
     "precision": 0.1,
 }
 
-gdf = gpd.read_file('./map_data/countries-50m.json', driver="TopoJSON",).fillna(-1)
+gdf = gpd.read_file(
+    "./map_data/countries-50m.json",
+    driver="TopoJSON",
+).fillna(-1)
 gdf["id"] = gdf["id"].astype(int)
 
 
@@ -41,9 +44,13 @@ def get_country_data(filename):
     )
 
     mms = MinMaxScaler(feature_range=(0, 100))
-    mms_data = mms.fit_transform(country_data[["card_value", "card_count", "shipping", "order_count"]])
+    mms_data = mms.fit_transform(
+        country_data[["card_value", "card_count", "shipping", "order_count"]]
+    )
 
-    country_data[["card_value_mms", "card_count_mms", "shipping_mms", "order_count_mms"]] = mms_data
+    country_data[
+        ["card_value_mms", "card_count_mms", "shipping_mms", "order_count_mms"]
+    ] = mms_data
 
     return country_data
 
@@ -77,7 +84,12 @@ def create_map(country_data, location_data):
             "card_count_str",
             "title",
         ],
-        value_vars=["card_value_mms", "card_count_mms", "shipping_mms", "order_count_mms"],
+        value_vars=[
+            "card_value_mms",
+            "card_count_mms",
+            "shipping_mms",
+            "order_count_mms",
+        ],
         ignore_index=True,
     )
     long_normalized_df
@@ -90,7 +102,7 @@ def create_map(country_data, location_data):
             left_on="id",
             right_on="id",
         )
-            .replace(
+        .replace(
             {
                 "card_value_mms": "Card value",
                 "card_count_mms": "Card count",
@@ -98,15 +110,15 @@ def create_map(country_data, location_data):
                 "order_count_mms": "Orders",
             }
         )
-            .sort_values("variable", ascending=False)
+        .sort_values("variable", ascending=False)
     )
     country_geo_df
 
     background = (
         alt.Chart(gdf)
-            .mark_geoshape(fill="lightgray", stroke="white")
-            .project("conicEquidistant", **projection_params)
-            .properties(width=700, height=500)
+        .mark_geoshape(fill="lightgray", stroke="white")
+        .project("conicEquidistant", **projection_params)
+        .properties(width=700, height=500)
     )
 
     input_dropdown = alt.binding_select(
@@ -173,7 +185,7 @@ def create_map(country_data, location_data):
         )  # https://stackoverflow.com/questions/65755698/altair-tooltips-dont-work-when-using-selection
     )
 
-    return (background + heatmap + points + numbers)
+    return background + heatmap + points + numbers
 
 
 if __name__ == "__main__":
@@ -184,8 +196,5 @@ if __name__ == "__main__":
 
     altair_map.save("./docs/index.html")
 
-    output_chart = altair_map.properties(
-        width="container", height=500
-    )
+    output_chart = altair_map.properties(width="container", height=500)
     output_chart.save("mtg_map.json")
-
