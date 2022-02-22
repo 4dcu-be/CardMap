@@ -92,7 +92,6 @@ def create_map(country_data, location_data):
         ],
         ignore_index=True,
     )
-    long_normalized_df
 
     country_geo_df = (
         pd.merge(
@@ -112,7 +111,6 @@ def create_map(country_data, location_data):
         )
         .sort_values("variable", ascending=False)
     )
-    country_geo_df
 
     background = (
         alt.Chart(gdf)

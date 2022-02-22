@@ -33,3 +33,4 @@ shipment_id,zip,city,country,card_value,card_count,shipping,order_date,lng,lat
 1068771591,9000,Aalborg,Denmark,2.0,9,2.53,"Wed, 2 Feb 2022 13:57:55 +0000",9.8889002,57.0384773
 1069094743,80500,Montdidier,France,9.2,4,2.53,"Sun, 6 Feb 2022 12:37:29 +0000",2.566932,49.647007
 1069182486,38259,Salzgitter,Germany,6.4,2,2.53,"Mon, 7 Feb 2022 11:57:30 +0000",10.3765154,52.0640206
+1070068088,1023XC,Amsterdam,Netherlands,9.95,1,2.53,"Fri, 18 Feb 2022 09:54:03 +0000",4.9419189,52.3931306
