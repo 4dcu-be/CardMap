@@ -22,6 +22,10 @@ gdf = gpd.read_file(
 ).fillna(-1)
 gdf["id"] = gdf["id"].astype(int)
 
+# Crop the dataframe a little so we don't include the entire world, just the relevant part with a large boundary
+gdf = gdf.cx[
+    -11.902485:60, 25:65,
+]
 
 def get_country_data(filename):
     country_data = pd.read_csv(filename)

@@ -1,7 +1,9 @@
 lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 -8.665559199999999,43.2275012,36.0,3,5.06,2,15100,Carballo,Spain
 -1.8391485,39.0019158,5.4,3,2.21,1,02001,Albacete,Spain
+-0.1077723,51.6369319,49.0,1,12.86,1,N21,1LN London,United Kingdom
 1.6979398,41.3461265,20.9,5,2.21,1,08720,Vilafranca Del Penedes,Spain
+2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
 2.566932,49.647007,9.2,4,2.53,1,80500,Montdidier,France
 3.7290914,51.06783069999999,3.2,6,2.98,2,9000,Gent,Belgium
 4.355078499999999,51.8344145,3.0,1,2.21,1,3207SB,Spijkenisse,Netherlands
@@ -15,6 +17,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 5.471422,52.51853699999999,17.0,1,2.21,1,8245HA,Lelystad,Netherlands
 5.6069213,50.59030389999999,0.9,1,1.4,1,4053,Embourg,Belgium
 6.1737197,48.6896459,15.0,3,2.21,1,54000,Nancy,France
+6.568109199999999,53.1350779,33.5,1,8.0,1,9761BV,Eelde,Netherlands
 8.4644509,49.1465388,40.35,5,10.5,1,76676,Graben-Neudorf,Germany
 8.5136343,49.2244562,8.5,1,2.21,1,68753,Waghausel,Germany
 9.0286944,54.7906442,4.5,4,2.21,1,25917,Achtrup,Germany
@@ -23,6 +26,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 10.0226511,45.133249,18.0,8,2.21,1,26100,Cremona,Italy
 10.1284243,53.208713,12.0,1,2.21,1,21376,Salzhausen,Germany
 10.3765154,52.0640206,6.4,2,2.53,1,38259,Salzgitter,Germany
+11.4842864,48.1892389,16.2,2,2.53,1,80997,Munchen,Germany
 13.4035426,52.33435799999999,9.2,6,2.21,1,15827,Blankenfelde OT Dahlewitz,Germany
 13.7364624,50.7766262,24.0,4,2.21,1,01773,Altenberg,Germany
 14.4898001,40.6984766,6.0,6,2.53,1,80053,Castellammare Di Stabia (NA),Italy
