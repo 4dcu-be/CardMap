@@ -1,7 +1,7 @@
 lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 -8.665559199999999,43.2275012,36.0,3,5.06,2,15100,Carballo,Spain
 -1.8391485,39.0019158,5.4,3,2.21,1,02001,Albacete,Spain
--0.1077723,51.6369319,49.0,1,12.86,1,N21,1LN London,United Kingdom
+-0.1077723,51.6369319,49.0,1,12.86,1,N21 1LN,London,United Kingdom
 1.6979398,41.3461265,20.9,5,2.21,1,08720,Vilafranca Del Penedes,Spain
 2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
 2.566932,49.647007,9.2,4,2.53,1,80500,Montdidier,France
