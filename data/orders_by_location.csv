@@ -12,6 +12,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 4.7215113,50.9535967,12.4,7,1.4,1,3110,Rotselaar,Belgium
 4.73571,50.88514,11.3,3,1.4,1,3010,Kessel-Lo,Belgium
 4.827381,50.98061509999999,3.5,1,1.4,1,3200,Aarschot,Belgium
+4.8441095,52.3639618,12.0,1,2.53,1,1058ES,Amsterdam,Netherlands
 4.9419189,52.3931306,9.95,1,2.53,1,1023XC,Amsterdam,Netherlands
 5.344740499999999,50.9215166,0.0,57,0.0,1,3500, Hasselt,Belgium
 5.471422,52.51853699999999,17.0,1,2.21,1,8245HA,Lelystad,Netherlands
@@ -30,6 +31,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 13.4035426,52.33435799999999,9.2,6,2.21,1,15827,Blankenfelde OT Dahlewitz,Germany
 13.7364624,50.7766262,24.0,4,2.21,1,01773,Altenberg,Germany
 14.4898001,40.6984766,6.0,6,2.53,1,80053,Castellammare Di Stabia (NA),Italy
+14.7890198,55.1136597,5.5,1,2.53,1,3700,Ronne,Denmark
 16.3541243,48.1857835,3.5,1,2.53,1,1050,Wien,Austria
 16.8498282,46.8379252,4.0,5,2.21,1,8900,Zalaegerszeg,Hungary
 17.66665,49.2380088,15.35,5,2.21,1,76005,Zlin,Czech Republic
