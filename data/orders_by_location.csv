@@ -40,6 +40,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 16.3541243,48.1857835,3.5,1,2.53,1,1050,Wien,Austria
 16.8498282,46.8379252,4.0,5,2.21,1,8900,Zalaegerszeg,Hungary
 17.66665,49.2380088,15.35,5,2.21,1,76005,Zlin,Czech Republic
+18.0077781,59.3179883,1.2,1,2.53,1,11767,"GrAPndal, Stockholm",Sweden
 22.0025444,50.0400986,18.3,17,2.21,1,35-068,Rzeszow,Poland
 23.4711986,51.1431232,9.0,2,2.53,1,22-100,Chelm,Poland
 26.7084346,58.3511805,5.5,1,2.21,1,50110,Tartu,Estonia
