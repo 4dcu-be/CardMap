@@ -9,10 +9,10 @@ format_cost = lambda x: f"€ {x:.02f}"
 format_cards = lambda x: f"{x} card" if x == 1 else f"{x} cards"
 
 projection_params = {
-    "scale": 900,
-    "rotate": [-10, 0],
-    "center": [0, 50],
-    "parallels": [35, 65],
+    "scale": 800,
+    "rotate": [-17, 0],
+    "center": [-10, 50],
+    "parallels": [25, 65],
     "precision": 0.1,
 }
 
