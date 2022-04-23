@@ -13,7 +13,7 @@ def parse_subject(subject) -> str:
     :param subject: subject line from the email
     :return: shipment id (as str)
     """
-    parts = subject.replace('_', ' ').split()
+    parts = subject.replace("_", " ").split()
     return parts[1]
 
 
