@@ -8,7 +8,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 1.6979398,41.3461265,20.9,5,2.21,1,08720,Vilafranca Del Penedes,Spain
 2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
 2.566932,49.647007,9.2,4,2.53,1,80500,Montdidier,France
-2.7630471,41.6528561,3.6,4,2.53,1,08380,malgrat de mar,Spain
+2.7630471,41.6528561,3.6,4,2.53,1,08380,Malgrat de Mar,Spain
 3.7290914,51.06783069999999,3.2,6,2.98,2,9000,Gent,Belgium
 4.34148,51.20367,58.0,1,6.0,1,2070, Burcht,Belgium
 4.355078499999999,51.8344145,3.0,1,2.21,1,3207SB,Spijkenisse,Netherlands
@@ -38,12 +38,14 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 12.5179439,55.681845,2.36,6,2.53,1,2000,Frederiksberg,Denmark
 13.4035426,52.33435799999999,9.2,6,2.21,1,15827,Blankenfelde OT Dahlewitz,Germany
 13.7364624,50.7766262,24.0,4,2.21,1,01773,Altenberg,Germany
+13.7364625,50.7766262,13.5,14,2.53,1,01773,Altenberg,Germany
 14.4898001,40.6984766,6.0,6,2.53,1,80053,Castellammare Di Stabia (NA),Italy
 14.7890198,55.1136597,5.5,1,2.53,1,3700,Ronne,Denmark
 16.3541243,48.1857835,3.5,1,2.53,1,1050,Wien,Austria
 16.8498282,46.8379252,4.0,5,2.21,1,8900,Zalaegerszeg,Hungary
 17.66665,49.2380088,15.35,5,2.21,1,76005,Zlin,Czech Republic
 18.0077781,59.3179883,1.2,1,2.53,1,11767,Stockholm,Sweden
+20.2299725,63.8299073,2.4,4,2.53,1,90320,Umea,Sweden
 22.0025444,50.0400986,18.3,17,2.21,1,35-068,Rzeszow,Poland
 23.4711986,51.1431232,9.0,2,2.53,1,22-100,Chelm,Poland
 26.7084346,58.3511805,5.5,1,2.21,1,50110,Tartu,Estonia
