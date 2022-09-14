@@ -5,6 +5,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 -4.474826,36.6819541,2.0,2,2.53,1,29004,Malaga,Spain
 -2.9238378,43.2571974,8.0,17,2.53,1,48005,Bilbao,Spain
 -1.8391485,39.0019158,5.4,3,2.21,1,02001,Albacete,Spain
+-1.2070113,37.9287007,17.7,7,2.53,1,30833,Sangonera la Verde (Murcia),Spain
 -0.1077723,51.6369319,49.0,1,12.86,1,N21 1LN,London,United Kingdom
 1.6979398,41.3461265,20.9,5,2.21,1,08720,Vilafranca Del Penedes,Spain
 2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
@@ -42,6 +43,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 13.4035426,52.33435799999999,9.2,6,2.21,1,15827,Blankenfelde OT Dahlewitz,Germany
 13.7364624,50.7766262,24.0,4,2.21,1,01773,Altenberg,Germany
 13.7364625,50.7766262,13.5,14,2.53,1,01773,Altenberg,Germany
+14.4694186,35.9191182,32.0,4,12.86,1,SWQ2282,Swieqi,Malta
 14.4898001,40.6984766,6.0,6,2.53,1,80053,Castellammare Di Stabia (NA),Italy
 14.7890198,55.1136597,5.5,1,2.53,1,3700,Ronne,Denmark
 16.3541243,48.1857835,3.5,1,2.53,1,1050,Wien,Austria

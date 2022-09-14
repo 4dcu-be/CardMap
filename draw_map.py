@@ -99,24 +99,24 @@ def create_map(country_data, location_data):
         ignore_index=True,
     )
 
-    country_geo_df = (
-        pd.merge(
-            gdf[["id", "geometry"]],
-            long_normalized_df,
-            how="right",
-            left_on="id",
-            right_on="id",
-        )
-        .replace(
-            {
-                "card_value_mms": "Card value",
-                "card_count_mms": "Card count",
-                "shipping_mms": "Shipping cost",
-                "order_count_mms": "Orders",
-            }
-        )
-        .sort_values("variable", ascending=False)
+    country_geo_df = pd.merge(
+        gdf[["id", "geometry"]],
+        long_normalized_df,
+        how="right",
+        left_on="id",
+        right_on="id",
     )
+
+    country_geo_df["variable"] = country_geo_df["variable"].replace(
+        {
+            "card_value_mms": "Card value",
+            "card_count_mms": "Card count",
+            "shipping_mms": "Shipping cost",
+            "order_count_mms": "Orders",
+        }
+    )
+
+    country_geo_df = country_geo_df.sort_values("variable", ascending=False)
 
     background = (
         alt.Chart(gdf)
