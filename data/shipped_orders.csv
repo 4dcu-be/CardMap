@@ -57,3 +57,4 @@ shipment_id,zip,city,country,card_value,card_count,shipping,order_date,lng,lat
 1087625414,SWQ2282,Swieqi,Malta,32.0,4,12.86,"Thu, 8 Sep 2022 19:07:06 +0000",14.4694186,35.9191182
 1087694956,30833,Sangonera la Verde (Murcia),Spain,17.7,7,2.53,"Fri, 9 Sep 2022 14:00:19 +0000",-1.2070113,37.9287007
 1088992788,7425rg,Deventer,Netherlands,18.5,10,2.53,"Wed, 21 Sep 2022 20:47:56 +0000",6.2300426,52.2665984
+1090665007,32360,Lavardens,France,3.5,1,2.53,"Fri, 7 Oct 2022 08:55:41 +0000",0.511695,43.76052199999999
