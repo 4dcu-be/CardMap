@@ -58,3 +58,5 @@ shipment_id,zip,city,country,card_value,card_count,shipping,order_date,lng,lat
 1087694956,30833,Sangonera la Verde (Murcia),Spain,17.7,7,2.53,"Fri, 9 Sep 2022 14:00:19 +0000",-1.2070113,37.9287007
 1088992788,7425rg,Deventer,Netherlands,18.5,10,2.53,"Wed, 21 Sep 2022 20:47:56 +0000",6.2300426,52.2665984
 1090665007,32360,Lavardens,France,3.5,1,2.53,"Fri, 7 Oct 2022 08:55:41 +0000",0.511695,43.76052199999999
+1092383023,10600,Praha 10,Czech Republic,6.75,3,2.53,"Mon, 24 Oct 2022 22:25:12 +0000",14.4945303,50.0558866
+1092433582,80131,Napoli,Italy,1.4,4,2.53,"Mon, 24 Oct 2022 13:00:46 +0000",14.1989038,40.864297
