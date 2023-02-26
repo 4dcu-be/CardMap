@@ -1,16 +1,17 @@
 country,card_value,card_count,shipping,order_count
 Austria,3.5,1,2.53,1
-Belgium,237.8,83,21.48,10
+Belgium,240.6,90,24.46,12
 Czech Republic,22.1,8,4.74,2
 Denmark,9.86,16,7.59,3
 Estonia,5.5,1,2.21,1
+Finland,2.0,2,2.95,1
 France,30.099999999999998,9,9.799999999999999,4
 Germany,207.25,44,43.57,11
 Hungary,4.0,5,2.21,1
 Italy,33.8,22,9.799999999999999,4
 Malta,32.0,4,12.86,1
-Netherlands,183.45,18,33.72,8
-Poland,27.3,19,4.74,2
+Netherlands,186.55,25,36.25,9
+Poland,30.6,25,7.27,3
 Portugal,1.5,6,2.53,1
 Spain,101.38,43,22.13,9
 Sweden,4.6,9,7.59,3

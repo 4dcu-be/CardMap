@@ -15,9 +15,11 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 2.7630471,41.6528561,3.6,4,2.53,1,08380,Malgrat de Mar,Spain
 3.7290914,51.06783069999999,3.2,6,2.98,2,9000,Gent,Belgium
 3.9448488,50.9615032,90.0,4,6.9,1,9340,Lede,Belgium
+4.0463096,50.4588978,1.0,3,1.49,1,7021,HavrA(c),Belgium
 4.34148,51.20367,58.0,1,6.0,1,2070,Burcht,Belgium
 4.355078499999999,51.8344145,3.0,1,2.21,1,3207SB,Spijkenisse,Netherlands
 4.4007483,52.09089729999999,9.5,2,2.21,1,2264LG,Leidschendam,Netherlands
+4.440345499999999,51.2472392,1.8,4,1.49,1,2170,Antwerp,Belgium
 4.4737954,51.0208132,58.5,3,0.0,1,2800,Mechelen,Belgium
 4.7215113,50.9535967,12.4,7,1.4,1,3110,Rotselaar,Belgium
 4.73571,50.88514,11.3,3,1.4,1,3010,Kessel-Lo,Belgium
@@ -29,7 +31,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 5.6069213,50.59030389999999,0.9,1,1.4,1,4053,Embourg,Belgium
 6.149984099999999,53.2761155,80.0,1,11.5,1,9291GZ,Kollum,Netherlands
 6.1737197,48.6896459,15.0,3,2.21,1,54000,Nancy,France
-6.2300426,52.2665984,18.5,10,2.53,1,7425rg,Deventer,Netherlands
+6.2300426,52.2665984,21.6,17,5.06,2,7425rg,Deventer,Netherlands
 6.568109199999999,53.1350779,33.5,1,8.0,1,9761BV,Eelde,Netherlands
 8.4644509,49.1465388,40.35,5,10.5,1,76676,Graben-Neudorf,Germany
 8.5136343,49.2244562,8.5,1,2.21,1,68753,Waghausel,Germany
@@ -56,7 +58,9 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 16.8498282,46.8379252,4.0,5,2.21,1,8900,Zalaegerszeg,Hungary
 17.66665,49.2380088,15.35,5,2.21,1,76005,Zlin,Czech Republic
 18.0077781,59.3179883,1.2,1,2.53,1,11767,Stockholm,Sweden
+19.1851996,50.3000762,3.3,6,2.53,1,41-219,Sosnowiec,Poland
 20.2299725,63.8299073,2.4,4,2.53,1,90320,Umea,Sweden
 22.0025444,50.0400986,18.3,17,2.21,1,35-068,Rzeszow,Poland
 23.4711986,51.1431232,9.0,2,2.53,1,22-100,Chelm,Poland
 26.7084346,58.3511805,5.5,1,2.21,1,50110,Tartu,Estonia
+27.6791386,62.9541405,2.0,2,2.95,1,70420,Kuopio,Finland
