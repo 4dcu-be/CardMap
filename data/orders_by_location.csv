@@ -13,7 +13,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
 2.566932,49.647007,9.2,4,2.53,1,80500,Montdidier,France
 2.7630471,41.6528561,3.6,4,2.53,1,08380,Malgrat de Mar,Spain
-3.7290914,51.06783069999999,3.2,6,2.98,2,9000,Gent,Belgium
+3.7290914,51.06783069999999,5.300000000000001,9,4.67,3,9000,Gent,Belgium
 3.9448488,50.9615032,90.0,4,6.9,1,9340,Lede,Belgium
 4.0463096,50.4588978,1.0,3,1.49,1,7021,HavrA(c),Belgium
 4.34148,51.20367,58.0,1,6.0,1,2070,Burcht,Belgium
@@ -33,7 +33,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 6.1737197,48.6896459,15.0,3,2.21,1,54000,Nancy,France
 6.2300426,52.2665984,21.6,17,5.06,2,7425rg,Deventer,Netherlands
 6.568109199999999,53.1350779,33.5,1,8.0,1,9761BV,Eelde,Netherlands
-8.4644509,49.1465388,40.35,5,10.5,1,76676,Graben-Neudorf,Germany
+8.4644509,49.1465388,42.6,8,13.58,2,76676,Graben-Neudorf,Germany
 8.5136343,49.2244562,8.5,1,2.21,1,68753,Waghausel,Germany
 9.0286944,54.7906442,4.5,4,2.21,1,25917,Achtrup,Germany
 9.8377274,52.6478492,67.5,2,11.9,1,29323,Wietze,Germany
