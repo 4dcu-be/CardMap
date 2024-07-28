@@ -43,9 +43,11 @@ def get_country_data(filename):
     country_data["shipping_str"] = country_data["shipping"].apply(format_cost)
     country_data["card_count_str"] = country_data["card_count"].apply(format_cards)
     country_data["title"] = country_data.apply(
-        lambda x: f"{x['country']} (1 order)"
-        if x["order_count"] == 1
-        else f"{x['country']} ({x['order_count']} orders)",
+        lambda x: (
+            f"{x['country']} (1 order)"
+            if x["order_count"] == 1
+            else f"{x['country']} ({x['order_count']} orders)"
+        ),
         axis="columns",
     )
 
@@ -67,9 +69,11 @@ def get_location_data(filename):
     location_data["shipping_str"] = location_data["shipping"].apply(format_cost)
     location_data["card_count_str"] = location_data["card_count"].apply(format_cards)
     location_data["title"] = location_data.apply(
-        lambda x: f"{x['city']} (1 order)"
-        if x["order_count"] == 1
-        else f"{x['city']} ({x['order_count']} orders)",
+        lambda x: (
+            f"{x['city']} (1 order)"
+            if x["order_count"] == 1
+            else f"{x['city']} ({x['order_count']} orders)"
+        ),
         axis="columns",
     )
 
