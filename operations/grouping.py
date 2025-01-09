@@ -5,9 +5,9 @@ def groupby_country(df: pd.DataFrame):
     return (
         df.groupby(["country"])
         .agg(
-            card_value=pd.NamedAgg("card_value", sum),
-            card_count=pd.NamedAgg("card_count", sum),
-            shipping=pd.NamedAgg("shipping", sum),
+            card_value=pd.NamedAgg("card_value", "sum"),
+            card_count=pd.NamedAgg("card_count", "sum"),
+            shipping=pd.NamedAgg("shipping", "sum"),
             order_count=pd.NamedAgg("shipping", "count"),
         )
         .reset_index()
@@ -26,9 +26,9 @@ def groupby_location(df: pd.DataFrame):
     return (
         df.groupby(["lng", "lat"])
         .agg(
-            card_value=pd.NamedAgg("card_value", sum),
-            card_count=pd.NamedAgg("card_count", sum),
-            shipping=pd.NamedAgg("shipping", sum),
+            card_value=pd.NamedAgg("card_value", "sum"),
+            card_count=pd.NamedAgg("card_count", "sum"),
+            shipping=pd.NamedAgg("shipping", "sum"),
             order_count=pd.NamedAgg("shipping", "count"),
             zip=pd.NamedAgg("zip", "first"),
             city=pd.NamedAgg("city", "first"),

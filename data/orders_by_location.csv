@@ -10,6 +10,7 @@ lng,lat,card_value,card_count,shipping,order_count,zip,city,country
 -0.1077723,51.6369319,49.0,1,12.86,1,N21 1LN,London,United Kingdom
 0.511695,43.76052199999999,3.5,1,2.53,1,32360,Lavardens,France
 1.6979398,41.3461265,20.9,5,2.21,1,08720,Vilafranca Del Penedes,Spain
+2.2285864,41.45476379999999,2.2,5,3.08,1,08917,Badalona,Spain
 2.381153,48.85799300000001,2.4,1,2.53,1,75011,Paris,France
 2.566932,49.647007,9.2,4,2.53,1,80500,Montdidier,France
 2.7630471,41.6528561,3.6,4,2.53,1,08380,Malgrat de Mar,Spain
